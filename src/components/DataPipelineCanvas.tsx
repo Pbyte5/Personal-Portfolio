@@ -629,9 +629,17 @@ export const DataPipelineCanvas: React.FC = () => {
     stateRef.current.mouse.isHovering = false;
   };
 
+  const handleClick = () => {
+    // Immediate smooth transition into next shape on user click
+    if (stateRef.current.shapes.length > 0 && stateRef.current.timer >= stateRef.current.transitionDuration) {
+      stateRef.current.timer = stateRef.current.cycleDuration;
+    }
+  };
+
   return (
     <canvas
       ref={canvasRef}
+      onClick={handleClick}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className="binary-fullscreen-background"

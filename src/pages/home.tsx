@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="hero-inline-meta">
                   <span className="hero-inline-name">Dylan Paternina</span>
                   <span className="hero-inline-divider">/</span>
-                  <span className="hero-inline-role">Estudiante de Ingeniería · Datos & Cloud</span>
+                  <span className="hero-inline-role">Estudiante de ingenieria de Datos</span>
                 </div>
               </div>
               
